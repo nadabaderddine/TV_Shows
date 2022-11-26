@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import TvShowsList from './pages/TvShowsList';
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -10,16 +12,15 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <div>
-        <h1>Hello World</h1>
-        <Link to="about">About Us</Link>
-      </div>
+     <TvShowsList/>
     ),
   },
+
   {
     path: "about",
     element: <div>About</div>,
   },
+ 
 ]);
 
 const root = ReactDOM.createRoot(
