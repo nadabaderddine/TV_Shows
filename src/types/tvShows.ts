@@ -7,7 +7,7 @@ type Tcountry={
 
 export type TvShow = { 
 
-is: number;
+id: number;
 url: string;
 name: string;
 type: string;

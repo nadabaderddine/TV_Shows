@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import TvShowsList from './pages/TvShowsList';
+import TvShows from './pages/TvShowDetails';
 
 import {
   createBrowserRouter,
   RouterProvider,
-  Link,
+ 
 } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -15,7 +16,12 @@ const router = createBrowserRouter([
      <TvShowsList/>
     ),
   },
-
+  {
+    path: "/tvShow/:tvShowId",
+    element: (
+     <TvShows/>
+    ),
+  },
   {
     path: "about",
     element: <div>About</div>,
