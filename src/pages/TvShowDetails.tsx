@@ -22,7 +22,7 @@ const TvShowDetails = ():JSX.Element => {
 
   return (
     <div>
-      <Header />
+      <Header   />
       <Container style={{ backgroundColor:'white' }}>
         <Row className='px-4 my-5'>
           <Col sm={4}> 

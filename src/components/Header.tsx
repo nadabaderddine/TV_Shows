@@ -1,11 +1,12 @@
 import { Navbar, Container, Nav, Form, FormControl, Button } from 'react-bootstrap';
 
 interface HeaderProps {
-  isDisplaySearch?:boolean
+  isDisplaySearch?: boolean;
+  searchItem?: string;
+  setSearchItem?: (searchItem:string) => void;
 }
+const Header = ({ isDisplaySearch, searchItem, setSearchItem }:HeaderProps):JSX.Element => {
 
-const Header = ({ isDisplaySearch }:HeaderProps):JSX.Element => {
-   
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container fluid>
@@ -25,6 +26,12 @@ const Header = ({ isDisplaySearch }:HeaderProps):JSX.Element => {
                 className="me-2"
                 aria-label="search"
                 name="query"
+                onChange={(e)=>{
+                  if (setSearchItem) {
+                    setSearchItem(e.target.value);
+                  }
+                }}
+                value={searchItem}
               ></FormControl>
               <Button variant="secondary" type="submit">Search</Button>
             </Form>         

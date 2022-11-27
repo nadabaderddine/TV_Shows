@@ -29,8 +29,8 @@ export type TvShow = {
   image:{ medium:string; original:string };
   summary:string;
   updated:number;
-  _links:{ self:{ href:string } };
-  previousepisode:{ href:string }
+  _links:{ self:{ href:string } ; previousepisode:{ href:string }
+  };
 
 };
 
