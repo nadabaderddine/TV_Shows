@@ -10,13 +10,11 @@ const Header = ({ isDisplaySearch, searchItem, setSearchItem }:HeaderProps):JSX.
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container fluid>
-        <Navbar.Brand href="/home">Movie App</Navbar.Brand>
-        <Navbar.Brand href="/home">Trending</Navbar.Brand>
+        <Navbar.Brand href="/">Movie App</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll"></Navbar.Toggle>
         <Navbar.Collapse id="nabarScroll">
           <Nav 
             className="me-auto my-2 my-lg-3"
-            style={{ maxHeight:'100px' }}
             navbarScroll></Nav>
           {isDisplaySearch &&
             <Form className="d-flex"  autoComplete="off">
