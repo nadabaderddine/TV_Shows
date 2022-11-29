@@ -1,6 +1,7 @@
 # TV_Shows
 
 TV_Shows application developped with TypeScript , React.js ( Hooks ) , React Router V6 
+
 In the project directory, you can run:
 
 npm install
