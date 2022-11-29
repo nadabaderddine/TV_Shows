@@ -23,11 +23,6 @@ const router = createBrowserRouter([
       <TvShows/>
     ),
   },
-  {
-    path: 'about',
-    element: <div>About</div>,
-  },
- 
 ]);
 
 const root = ReactDOM.createRoot(

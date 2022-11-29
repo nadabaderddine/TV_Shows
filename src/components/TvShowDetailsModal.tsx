@@ -2,6 +2,7 @@ import { Modal, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { TvShow } from '../types/tvShows';
 import '../styles/tvShows.css';
+
 interface TvShowBoxProps {
   tvShowItem:TvShow;
   show:boolean;
